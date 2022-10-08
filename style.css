@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  .center {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .clear {
+    clear: both;
+  }
+  
+  /* HEADER */
+  header {
+    background-color: #d6d6d6;
+    padding: 10px 2%;
+  }
+  header .logo {
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 50px;
+  }
+  
+  /* FORM */
+  .cover-form {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .bg {
+    background-image: url(./imagens/bg-form.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  .form-container {
+    float: right;
+    margin-right: 40px;
+    width: 400px;
+    height: calc(100% + 30px);
+    position: relative;
+    top: -15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 1px 10px 1px rgb(126, 125, 125);
+  }
+  .form-container h2 {
+    font-weight: normal;
+    padding: 30px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgba(234, 236, 239, 0.7);
+  }
+  .form-container form {
+    margin-top: 8px;
+    padding: 0 2%;
+  }
+  .form-container form p {
+    font-size: 13px;
+    color: #525252;
+  }
+  .form-container form input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    outline: none;
+  }
+  .form-container form input[type="submit"] {
+    background-color: #033c50;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 25px;
+    height: 50px;
+    border: 0;
+  }
+  .form-wraper:not(:first-child) {
+    margin-top: 30px;
+  }
+  .form-wraper:last-child {
+    margin-top: 20px;
+  }
+  
+  /* CHAMADA */
+  .chamada {
+    padding: 0 2%;
+    text-align: center;
+  }
+  .chamada .center {
+    padding: 40px 0;
+    background-color: #015a7d;
+  }
+  .chamada h2 {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  .chamada p {
+    color: white;
+    margin-top: 10px;
+  }
+  
+  /* MOSAICO */
+  .mosaico {
+    padding: 0 2%;
+  }
+  .mosaico-single {
+    display: flex;
+  }
+  .mosaico-single .img-mosaico {
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    background-repeat: no-repeat;
+  }
+  .mosaico-single .txt-mosaico {
+    background-color: #067aa8;
+    padding: 60px;
+    width: 40%;
+    color: white;
+  }
+  
+  /* ULTIMA SECAO */
+  .last-section {
+    padding: 0 2%;
+  }
+  .last-section .center {
+    padding: 20px;
+    background-color: #eae9e9;
+    text-align: center;
+  }
+  .last-section p {
+    max-width: 1000px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: lighter;
+    text-decoration: underline;
+    line-height: 2;
+  }
+  
+  /*FOOTER */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid black;
+  }
+  /* RESPONSIVO */
+  @media screen and (max-width: 768px) {
+    header {
+      text-align: center;
+    }
+    header .logo {
+      display: inline-block;
+      float: none !important;
+    }
+  
+    .cover-form {
+      width: 100%;
+      padding: 0 0;
+      text-align: center;
+    }
+    .cover-form .center {
+      padding: 10px 2%;
+    }
+    .form-container {
+      display: inline-block;
+      float: none;
+      margin-right: 0;
+      height: 100%;
+      margin: 0px 0;
+      top: 0;
+      box-shadow: 0 0 0 0;
+      max-width: 300px;
+    }
+    .form-container form p {
+      text-align: justify;
+    }
+    .form-wraper {
+      margin-top: 20px !important;
+    }
+  
+    .chamada {
+      padding: 0 0;
+    }
+    .chamada p,
+    h2 {
+      max-width: 300px;
+      display: inline-block;
+    }
+  
+    .mosaico {
+      padding: 0 0;
+    }
+    .mosaico-single {
+      display: inline-block;
+    }
+    .mosaico-single .img-mosaico {
+      width: 100%;
+      padding-bottom: 400px;
+    }
+    .mosaico-single .txt-mosaico {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .last-section {
+      padding: 0 0;
+    }
+  }
